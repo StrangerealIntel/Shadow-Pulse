@@ -1,0 +1,2201 @@
+{
+    "name":  "Shadow Pulse",
+    "version":  "0.1",
+    "data":  [
+                 {
+                     "name":  "8Base",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "8Base",
+                     "algorithm":  "AES256 + RSA1024",
+                     "pattern":  [
+                                     "8base",
+                                     ""
+                                 ],
+                     "notes":  [
+                                   "info.hta",
+                                   "info.txt"
+                               ],
+                     "links":  "https://blogs.vmware.com/security/2023/06/8base-ransomware-a-heavy-hitting-player.html",
+                     "comment":  "Possible copycat or subgroup of RansomHouse group.The extension is also used as RAAS by Phobos"
+                 },
+                 {
+                     "name":  "AIDS",
+                     "activity":  "1989",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "",
+                     "notes":  "",
+                     "links":  "https://www.virusbulletin.com/uploads/pdf/magazine/1990/199001.pdf",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Archiveus",
+                     "activity":  "2006",
+                     "alias":  "MayAlert",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "RSA",
+                     "pattern":  "",
+                     "notes":  "",
+                     "links":  [
+                                   "https://web.archive.org/web/20230129125555/https://www.ecommercetimes.com/story/sophos-cracks-archiveus-ransomware-code-50881.html",
+                                   "https://ransomware.org/blog/archiveus-trojan-a-part-of-the-history-of-modern-ransomware/",
+                                   "https://www.knowbe4.com/archiveus-trojan"
+                               ],
+                     "comment":  "The Archiveus Trojan was the first ever ransomware strand to use RSA encryption"
+                 },
+                 {
+                     "name":  "Avaddon",
+                     "activity":  "2020-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Riddle spider",
+                     "algorithm":  "AES256 + RSA2048",
+                     "pattern":  "avdn",
+                     "notes":  "\\d{6}-readme.html",
+                     "links":  "https://atos.net/en/lp/securitydive/avaddon-ransomware-analysis",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "B0r0nt0k",
+                     "activity":  "2019",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "rontok",
+                     "notes":  "",
+                     "links":  "https://www.bleepingcomputer.com/news/security/b0r0nt0k-ransomware-wants-75-000-ransom-infects-linux-servers/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Babuk",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  [
+                                      "Windows",
+                                      "ESXI",
+                                      "Linux"
+                                  ],
+                     "ta":  "Gold Sonata",
+                     "algorithm":  [
+                                       "ChaCha8/Sosemanuk+Curve25519 (ESXI)",
+                                       "Curve25519/NIST K-571 + ChaCha20 (Windows)"
+                                   ],
+                     "pattern":  "babyk",
+                     "notes":  "How To Restore Your Files.txt",
+                     "links":  [
+                                   "https://chuongdong.com/reverse%20engineering/2021/01/16/BabukRansomware-v3/",
+                                   "https://research.kudelskisecurity.com/2023/03/28/dissecting-and-detecting-babuk-ransomware-cryptography/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Bad Rabbit",
+                     "activity":  "2017",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-128 (CBC) + RSA-2048",
+                     "pattern":  "",
+                     "notes":  "Readme.txt",
+                     "links":  "https://securelist.com/bad-rabbit-ransomware/82851/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Bitpaymer",
+                     "activity":  "2017-2019",
+                     "alias":  [
+                                   "FriedEx",
+                                   "IEncrypt"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "Gold Drake",
+                     "algorithm":  [
+                                       "RSA-1024 + 128-bit RC4",
+                                       "AES-256+ RSA-4096"
+                                   ],
+                     "pattern":  [
+                                     "locked",
+                                     "\\w{3,12}"
+                                 ],
+                     "notes":  [
+                                   "\\w{3,12}_readme",
+                                   "readme_txt"
+                               ],
+                     "links":  [
+                                   "https://www.trendmicro.com/en_us/research/18/l/ursnif-emotet-dridex-and-bitpaymer-gangs-linked-by-a-similar-loader.html",
+                                   "https://blog.morphisec.com/bitpaymer-ransomware-with-new-custom-packer-framework",
+                                   "https://id-ransomware.blogspot.com/2017/07/bitpaymer-ransomware.html"
+                               ],
+                     "comment":  "BitPaymer adds its file extension to the encrypted files � �.\u003ccompany_name\u003e�, alongside a ransom note with the same file name and - �.\u003ccompany_name\u003e_readme� extension."
+                 },
+                 {
+                     "name":  "Blackbasta",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,EXSI",
+                     "ta":  "Gold Rebellion",
+                     "algorithm":  "ChaCha20",
+                     "pattern":  "basta",
+                     "notes":  "readme.txt",
+                     "links":  "https://securityscorecard.com/research/a-deep-dive-into-black-basta-ransomware/,",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Blackbyte",
+                     "activity":  "2021-now",
+                     "alias":  "Blackbyte NT",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Lotus",
+                     "algorithm":  [
+                                       "AES-128 + RSA-1024",
+                                       "Curve25519+ ChaCha20"
+                                   ],
+                     "pattern":  [
+                                     "blackbyte",
+                                     "blackbytent"
+                                 ],
+                     "notes":  "BlackByteRestore.txt",
+                     "links":  [
+                                   "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/blackbyte-ransomware-pt-1-in-depth-analysis/",
+                                   "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/blackbyte-ransomware-pt-2-code-obfuscation-analysis/",
+                                   "https://www.zscaler.com/blogs/security-research/analysis-blackbyte-ransomware-s-go-based-variants",
+                                   "https://unit42.paloaltonetworks.com/blackbyte-ransomware/",
+                                   "https://blog.cluster25.duskrise.com/2023/05/22/back-in-black-blackbyte-nt"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Blackcat",
+                     "activity":  "2021-now",
+                     "alias":  "ALPHV",
+                     "targetos":  "Windows,Linux,EXSI",
+                     "ta":  "Gold Blazer",
+                     "algorithm":  [
+                                       "AES",
+                                       "ChaCha20"
+                                   ],
+                     "pattern":  "\\w{7}",
+                     "notes":  "RECOVER-.\\w{7}.-FILES.txt",
+                     "links":  [
+                                   "https://www.cloudsek.com/blog/technical-analysis-of-alphv-blackcat-ransomware",
+                                   "https://securityscorecard.com/research/deep-dive-into-alphv-blackcat-ransomware/https://www.varonis.com/blog/blackcat-ransomware"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "BlueSky",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "Curve25519 + ChaCha20",
+                     "pattern":  "bluesky",
+                     "notes":  [
+                                   "# DECRYPT FILES BLUESKY #.html",
+                                   "# DECRYPT FILES BLUESKY #.txt"
+                               ],
+                     "links":  [
+                                   "https://unit42.paloaltonetworks.com/bluesky-ransomware/",
+                                   "https://www.sentinelone.com/blog/bluesky-ransomware-ad-lateral-movement-evasion-and-fast-encryption-puts-threat-on-the-radar/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Cactus",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Twisted Spider/Maze",
+                     "algorithm":  "AES256 (GCM)",
+                     "pattern":  [
+                                     "cts0",
+                                     "cts1"
+                                 ],
+                     "notes":  "CaCtUs.ReAdMe.txt",
+                     "links":  [
+                                   "https://www.arcticwolf.com/resources/blog/qlik-sense-exploited-in-cactus-ransomware-campaign/",
+                                   "https://resources.securityscorecard.com/research/deep-dive-cactus-ransomware",
+                                   "https://www.kroll.com/en/insights/publications/cyber/cactus-ransomware-prickly-new-variant-evades-detection"
+                               ],
+                     "comment":  [
+                                     "MAL_RANSOM_Cactus_Apr23",
+                                     "https://valhalla.nextron-systems.com/info/rule/MAL_RANSOM_Cactus_Apr23"
+                                 ]
+                 },
+                 {
+                     "name":  "Cl0p",
+                     "activity":  "2019-now",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux",
+                     "ta":  "Gold Heron",
+                     "algorithm":  "AES-256 + RSA-1024",
+                     "pattern":  [
+                                     "Clop",
+                                     "C_I_0P",
+                                     "CIIp",
+                                     "C_L_O_P"
+                                 ],
+                     "notes":  [
+                                   "ClopReadMe.txt",
+                                   "README_C_I_0P.TXT",
+                                   "!_READ_ME.RTF"
+                               ],
+                     "links":  [
+                                   "https://www.sentinelone.com/labs/cl0p-ransomware-targets-linux-systems-with-flawed-encryption-decryptor-available/",
+                                   "https://www.cybereason.com/blog/research/cybereason-vs.-clop-ransomware",
+                                   "https://unit42.paloaltonetworks.com/atoms/clop-ransomware/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Conti",
+                     "activity":  "2019-2022",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux",
+                     "ta":  [
+                                "Gold Ulrick",
+                                "Grim Spider"
+                            ],
+                     "algorithm":  "ChaCha8 + RSA-2048",
+                     "pattern":  [
+                                     "PXILP",
+                                     "PSFUX",
+                                     "LSNWX",
+                                     "\\w{5}"
+                                 ],
+                     "notes":  [
+                                   "CONTI_README.txt",
+                                   "readme.txt"
+                               ],
+                     "links":  [
+                                   "https://chuongdong.com/reverse%20engineering/2020/12/15/ContiRansomware/",
+                                   "https://assets.sentinelone.com/sentinellabs/conti-ransomware-unpacked",
+                                   "https://ieeexplore.ieee.org/document/9895237",
+                                   "https://lifars.com/wp-content/uploads/2021/10/ContiRansomware_Whitepaper.pdf",
+                                   "https://cybergeeks.tech/dissecting-the-last-version-of-conti-ransomware-using-a-step-by-step-approach/"
+                               ],
+                     "comment":  "A series of five letters is used as an extension, given the leaked source code used by Monti"
+                 },
+                 {
+                     "name":  "CryptoLocker",
+                     "activity":  "2013-2014",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  [
+                                     "ecc",
+                                     "ezz",
+                                     "exx",
+                                     "zzz",
+                                     "xyz",
+                                     "aaa",
+                                     "abc",
+                                     "ccc",
+                                     "vvv",
+                                     "xxx",
+                                     "ttt",
+                                     "micro",
+                                     "encrypted",
+                                     "locked",
+                                     "crypto",
+                                     "_crypt",
+                                     "crinf",
+                                     "r5a",
+                                     "XRNT",
+                                     "XTBL",
+                                     "crypt",
+                                     "R16M01D05",
+                                     "pzdc",
+                                     "good",
+                                     "LOL!",
+                                     "OMG!",
+                                     "RDM",
+                                     "RRK",
+                                     "encryptedRSA",
+                                     "crjoker",
+                                     "EnCiPhErEd",
+                                     "LeChiffre",
+                                     "keybtc@inbox_com",
+                                     "0x0",
+                                     "bleep",
+                                     "1999",
+                                     "vault",
+                                     "HA3",
+                                     "toxcrypt",
+                                     "magic",
+                                     "SUPERCRYPT",
+                                     "CTBL",
+                                     "CTB2",
+                                     "locky"
+                                 ],
+                     "notes":  [
+                                   "HELP_(TO_DECRYPT_YOUR|TO_SAVE|RESTORE|RECOVER|YOUR)_FILES.txt",
+                                   "(RECOVERY|recovery|recover|restore)(_FILE|_FILES|file).txt"
+                               ],
+                     "links":  [
+                                   "https://www.secureworks.com/research/cryptolocker-ransomware",
+                                   "https://www.reddit.com/r/sysadmin/comments/46361k/list_of_ransomware_extensions_and_known_ransom/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "CryptoWall",
+                     "activity":  "2014-2016",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  "CRYPTOWALL",
+                     "notes":  [
+                                   "DECRYPT_INSTRUCTION.(txt|html|url)",
+                                   "HELP_YOUR_FILES.(txt|html|url)"
+                               ],
+                     "links":  [
+                                   "https://www.proofpoint.com/fr/threat-reference/cryptowall-ransomware",
+                                   "https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/"
+                               ],
+                     "comment":  "Successor of Cryptolocker"
+                 },
+                 {
+                     "name":  "CTB Locker",
+                     "activity":  "2014-2020",
+                     "alias":  [
+                                   "Critroni",
+                                   "Curve to Bitcoin Locker"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  [
+                                       "AES-256 (CBC) + RSA 2048",
+                                       "curve25519+AES-256"
+                                   ],
+                     "pattern":  [
+                                     "ctbl",
+                                     "ctb2"
+                                 ],
+                     "notes":  [
+                                   "DecryptAllFiles  \\w{7}.txt",
+                                   "DecryptAllFiles.txt",
+                                   "\\w{7}.html"
+                               ],
+                     "links":  [
+                                   "https://www.pcrisk.com/removal-guides/8120-your-personal-files-are-encrypted-virus",
+                                   "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/advanced-threat-research/",
+                                   "https://blog.checkpoint.com/security/malware-analysis-ctb-locker/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Cylance",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "Windows,ESXI,Linux",
+                     "ta":  "",
+                     "algorithm":  "Salsa20",
+                     "pattern":  "Cylance",
+                     "notes":  "CYLANCE_README.txt",
+                     "links":  [
+                                   "https://blog.cyble.com/2023/04/07/new-cylance-ransomware-with-power-packed-commandline-options/",
+                                   "https://brandefense.io/blog/ransomware/cylance-ransomware-technical-analysis/"
+                               ],
+                     "comment":  [
+                                     "\"Crypter@firemail.de\"",
+                                     "\"Helper@firemail.de\""
+                                 ]
+                 },
+                 {
+                     "name":  "Darkside",
+                     "activity":  "2020-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Waterfall",
+                     "algorithm":  "Salsa20 + RSA-1024",
+                     "pattern":  "[0-9a-f]{8}",
+                     "notes":  "README.[0-9a-f]{8}.TXT",
+                     "links":  [
+                                   "https://www.dataprise.com/resources/blog/darkside-ransomware-analysis/",
+                                   "https://istrosec.com/blog/darkside-ransomware/",
+                                   "https://7orvs.github.io/malware%20analysis/DarkSide-Ransomeware/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Dharma",
+                     "activity":  "2016-now",
+                     "alias":  [
+                                   "Brrr",
+                                   "CrySiS",
+                                   "AI SARA",
+                                   "GPT ransomware"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "Gold Orion",
+                     "algorithm":  "AES-256 (CBC) + RSA-1024",
+                     "pattern":  [
+                                     "dharma",
+                                     "id-\\w{8}.\\[.{4,12}@\\w{2,8}\\.\\w{2,5}\\].\\w{2,8}",
+                                     "id-\\w{8}-SARA.\\[AI_SARA].GPT"
+                                 ],
+                     "notes":  [
+                                   "README.txt",
+                                   "AI_SARA.txt"
+                               ],
+                     "links":  [
+                                   "https://www.acronis.com/en-us/blog/posts/dharma-ransomware/",
+                                   "https://id-ransomware.blogspot.com/2016/11/dharma-ransomware.html",
+                                   "https://id-ransomware.blogspot.com/2023/08/aisara-ransomware.html"
+                               ],
+                     "comment":  "CrySiS  \u003e Dharma \u003e AI SARA"
+                 },
+                 {
+                     "name":  "Doppelpaymer",
+                     "activity":  "2019-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Gold Heron",
+                                "Doppel Spider"
+                            ],
+                     "algorithm":  "AES-256 (CBC) + RSA-1024",
+                     "pattern":  [
+                                     "locked",
+                                     "doppeled",
+                                     "readme2unlock",
+                                     "lock"
+                                 ],
+                     "notes":  [
+                                   "MANUAL.txt",
+                                   "Info.hta"
+                               ],
+                     "links":  [
+                                   "https://www.trendmicro.com/en_ca/research/21/a/an-overview-of-the-doppelpaymer-ransomware.html",
+                                   "https://www.malwarebytes.com/blog/news/2023/03/doppelpaymer-ransomware-group-disrupted-by-fbi-and-european-police-agencies"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "PayOrGrief",
+                     "activity":  "2021-2023",
+                     "alias":  "Grief",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Gold Heron",
+                                "Doppel Spider"
+                            ],
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  "pay0rgrief",
+                     "notes":  "",
+                     "links":  [
+                                   "https://id-ransomware.blogspot.com/search?q=grief",
+                                   "https://fr.darktrace.com/blog/pulling-back-the-curtain-on-grief-ransomware",
+                                   "https://redcanary.com/blog/grief-ransomware/"
+                               ],
+                     "comment":  "Grief was recently rebranded from DoppelPaymer ransomware. A ransom note is written on the lock screen on a blue background:(Grief)"
+                 },
+                 {
+                     "name":  "Erebus",
+                     "activity":  "2017",
+                     "alias":  "",
+                     "targetos":  "Linux",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  [
+                                     "ecrypt",
+                                     "grf",
+                                     "msj",
+                                     "sqj"
+                                 ],
+                     "notes":  [
+                                   "_DECRYPT_FILE.txt",
+                                   "YOUR_FILES_HAS_BEEN_ENCRYPTED.(txt|html)",
+                                   "README.html"
+                               ],
+                     "links":  "https://www.trendmicro.com/en_us/research/17/f/erebus-resurfaces-as-linux-ransomware.html",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "ESXIArgs",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "ESXI",
+                     "ta":  "",
+                     "algorithm":  "Sosemanuk+Curve25519",
+                     "pattern":  "args",
+                     "notes":  "index.html",
+                     "links":  [
+                                   "https://www.cloudsek.com/blog/analysis-of-files-used-in-esxiargs-ransomware-attack-against-vmware-esxi-servers",
+                                   "https://blogs.blackberry.com/en/2023/02/esxiargs-ransomware-knocking-out-unpatched-vmware-esxi-linux-servers-worldwide",
+                                   "https://www.youtube.com/watch?v=bBcvqxPdjoI\u0026ab_channel=OALabs"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "PrideLocker",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "ESXI",
+                     "ta":  "",
+                     "algorithm":  "Sosemanuk+Curve25519",
+                     "pattern":  "encrypted",
+                     "notes":  "HOW TO RECOVER YOUR FILES.txt",
+                     "links":  "https://www.synacktiv.com/publications/pridelocker-a-new-fork-of-babuk-esx-encryptor",
+                     "comment":  "variants based on Babuk source code"
+                 },
+                 {
+                     "name":  "GandCrab",
+                     "activity":  "2018-2019",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Garden",
+                     "algorithm":  [
+                                       "AES-256",
+                                       "Salsa20"
+                                   ],
+                     "pattern":  [
+                                     "CRAB",
+                                     "KRAB"
+                                 ],
+                     "notes":  "KRAB-DECRYPT.txt",
+                     "links":  [
+                                   "https://www.acronis.com/en-us/blog/posts/gandcrab/",
+                                   "https://www.fortinet.com/blog/threat-research/a-chronology-of-gandcrab-v4-x",
+                                   "https://www.vmray.com/cyber-security-blog/gandcrab-ransomware-evolution-analysis/",
+                                   "https://asec.ahnlab.com/en/17147/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "GoldenEye",
+                     "activity":  "2017",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 (CBC)/Salsa20 + RSA-1024",
+                     "pattern":  "\\w{8}",
+                     "notes":  "YOUR_FILES_ARE_ENCRYPTED.txt",
+                     "links":  [
+                                   "https://www.irjet.net/archives/V7/i12/IRJET-V7I1266.pdf",
+                                   "https://www.malwarebytes.com/blog/news/2016/12/goldeneye-ransomware-the-petyamischa-combo-rebranded"
+                               ],
+                     "comment":  "Not a wiper in all the cases"
+                 },
+                 {
+                     "name":  "GPCode",
+                     "activity":  "2006-2011",
+                     "alias":  "PGPCoder",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256+RSA-1024",
+                     "pattern":  [
+                                     "GpCODE",
+                                     "PGP"
+                                 ],
+                     "notes":  [
+                                   "HOW TO DECRYPT FILES.txt",
+                                   "ATTENTION!!!.TXT"
+                               ],
+                     "links":  [
+                                   "https://www.knowbe4.com/gpcode",
+                                   "https://www.f-secure.com/v-descs/gpcode.shtml",
+                                   "https://www.xylibox.com/2011/01/gpcode-ransomware-2010-simple-analysis.html"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Gwisinlocker",
+                     "activity":  "2022",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "",
+                     "algorithm":  "AES-256+RSA-2048",
+                     "pattern":  "mcrgnx",
+                     "notes":  "!!!_HOW_TO_UNLOCK_\\w{3,16}_FILES_!!!.TXT",
+                     "links":  [
+                                   "https://asec.ahnlab.com/en/37483/",
+                                   "https://www.reversinglabs.com/blog/gwisinlocker-ransomware-targets-south-korean-industrial-and-pharmaceutical-companies"
+                               ],
+                     "comment":  "the ransomware have also some cases where changes the extension name to the name of the targeted company"
+                 },
+                 {
+                     "name":  "Hades",
+                     "activity":  "2020-2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Winter",
+                     "algorithm":  "AES+RSA",
+                     "pattern":  [
+                                     "MafiaWare666",
+                                     "jcrypt",
+                                     "brutusptCrypt",
+                                     "bmcrypt",
+                                     "cyberone",
+                                     "l33ch",
+                                     "hades"
+                                 ],
+                     "notes":  "HOW-TO-DECRYPT-w{16}.txt",
+                     "links":  [
+                                   "https://www.mandiant.com/resources/blog/unc2165-shifts-to-evade-sanctions",
+                                   "https://www.crowdstrike.com/blog/hades-ransomware-successor-to-indrik-spiders-wastedlocker/",
+                                   "https://www.secureworks.com/blog/hades-ransomware-operators-use-distinctive-tactics-and-infrastructure"
+                               ],
+                     "comment":  "Moving to lockbit RAAS program"
+                 },
+                 {
+                     "name":  "Hermes",
+                     "activity":  "2017-2019",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "RSA-2048",
+                     "pattern":  "",
+                     "notes":  "DECRYPT_INFORMATION.html",
+                     "links":  "",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "IceFire",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux",
+                     "ta":  "",
+                     "algorithm":  "AES+RSA",
+                     "pattern":  "ifire",
+                     "notes":  "iFire-readme.txt",
+                     "links":  "https://www.sentinelone.com/labs/icefire-ransomware-returns-now-targeting-linux-enterprise-networks/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Jigsaw",
+                     "activity":  "2016",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES",
+                     "pattern":  [
+                                     "fun",
+                                     "kkk",
+                                     "btc",
+                                     "gws",
+                                     "porno",
+                                     "pornoransom",
+                                     "payransom",
+                                     "paybtcs",
+                                     "AFD",
+                                     "payms",
+                                     "pays",
+                                     "paym",
+                                     "paymrss",
+                                     "payrms",
+                                     "paymts",
+                                     "paymds",
+                                     "paymrts",
+                                     "epic"
+                                 ],
+                     "notes":  "",
+                     "links":  [
+                                   "https://malwaretips.com/threads/analysis-msil-ransomware-jigsaw.63251/",
+                                   "https://community.turgensec.com/jigsaw-ransomware-analysis-using-volatility/"
+                               ],
+                     "comment":  "Hardcoded password used for the encryption. The ransom note is displayed on the screen"
+                 },
+                 {
+                     "name":  "Lockbit",
+                     "activity":  "2019-now",
+                     "alias":  "",
+                     "targetos":  [
+                                      "Windows,Linux",
+                                      "ESXI",
+                                      "MacOS"
+                                  ],
+                     "ta":  "Gold Mystic",
+                     "algorithm":  "XSalsa20-Poly1305-Blake2b-Curve25519+AES-128",
+                     "pattern":  [
+                                     "abcd",
+                                     "lockbit"
+                                 ],
+                     "notes":  "Restore-my-files.txt",
+                     "links":  [
+                                   "https://26168787.fs1.hubspotusercontent-eu1.net/hubfs/26168787/whitepapers/NW_CERT_LockBit_whitepaper_1.0%20(2).pdf",
+                                   "https://threatmon.io/blog/lockbit-2-0-ransomware-analysis/",
+                                   "https://www.adacis.net/analyse-lockbit/",
+                                   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a",
+                                   "https://www.lifars.com/wp-content/uploads/2022/02/LockBitRansomware_Whitepaper.pdf",
+                                   "https://chuongdong.com/reverse%20engineering/2022/03/19/LockbitRansomware/",
+                                   "https://www.bleepingcomputer.com/news/security/lockbit-ransomware-encryptors-found-targeting-mac-devices/"
+                               ],
+                     "comment":  "ABCD ransomware \u003e Lockbit"
+                 },
+                 {
+                     "name":  "bl00dy",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  [
+                                       "XSalsa20-Poly1305-Blake2b-Curve25519+AES-128",
+                                       "Curve25519/NIST K-571 + ChaCha20"
+                                   ],
+                     "pattern":  "bl00dy",
+                     "notes":  "How To Restore Your Files.txt",
+                     "links":  [
+                                   "https://www.bleepingcomputer.com/news/security/fbi-bl00dy-ransomware-targets-education-orgs-in-papercut-attacks/",
+                                   "https://securelist.com/lockbit-ransomware-builder-analysis/110370/"
+                               ],
+                     "comment":  "Reuse the leaks of LockBit, Babuk, Conti source code rather than developing their own software"
+                 },
+                 {
+                     "name":  "Maze",
+                     "activity":  "2019-2020",
+                     "alias":  [
+                                   "Maze Locker",
+                                   "MazeLocker",
+                                   "ChaCha",
+                                   "ChaChaLocker"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "Gold Village",
+                     "algorithm":  "ChaCha20+RSA-2048",
+                     "pattern":  "\\w{4-7}",
+                     "notes":  "DECRYPT-FILES.txt",
+                     "links":  [
+                                   "https://securelist.com/maze-ransomware/99137/",
+                                   "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/ransomware-maze/"
+                               ],
+                     "comment":  "Maze  \u003e  Sekhmet \u003e  Egregor"
+                 },
+                 {
+                     "name":  "Nokoyawa",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Mansard",
+                     "algorithm":  "SECT233R1 and Curve25519 and Salsa20",
+                     "pattern":  "NOKOYAWA",
+                     "notes":  "NOKOYAWA_readme.txt",
+                     "links":  [
+                                   "https://www.sentinelone.com/anthology/nokoyawa/",
+                                   "https://www.sentinelone.com/labs/karma-ransomware-an-emerging-threat-with-a-hint-of-nemty-pedigree/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Karma",
+                     "activity":  "2021-2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Mansard",
+                     "algorithm":  [
+                                       "ChaCha20+Secp256k1",
+                                       "Salsa20+Sect233r1"
+                                   ],
+                     "pattern":  "KARMA",
+                     "notes":  [
+                                   "KARMA-AGREE.txt",
+                                   "KARMA-ENCRYPTED.txt"
+                               ],
+                     "links":  [
+                                   "https://www.sentinelone.com/labs/karma-ransomware-an-emerging-threat-with-a-hint-of-nemty-pedigree/",
+                                   "https://cyble.com/blog/a-deep-dive-analysis-of-karma-ransomware/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Phobos",
+                     "activity":  "2019-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Equinox",
+                     "algorithm":  "AES-128(CBC)/AES-256(CBC)+RSA",
+                     "pattern":  [
+                                     "8base",
+                                     "acute",
+                                     "actin",
+                                     "Acton",
+                                     "actor",
+                                     "Acuff",
+                                     "Acuna",
+                                     "acute",
+                                     "adage",
+                                     "Adair",
+                                     "Adame",
+                                     "banhu",
+                                     "banjo",
+                                     "Banks",
+                                     "Banta",
+                                     "Barak",
+                                     "Caleb",
+                                     "Cales",
+                                     "Caley",
+                                     "calix",
+                                     "Calle",
+                                     "Calum",
+                                     "Calvo",
+                                     "deuce",
+                                     "Dever",
+                                     "devil",
+                                     "Devoe",
+                                     "Devon",
+                                     "Devos",
+                                     "dewar",
+                                     "eight",
+                                     "eject",
+                                     "eking",
+                                     "Elbie",
+                                     "elbow",
+                                     "elder",
+                                     "phobos",
+                                     "help",
+                                     "blend",
+                                     "bqux",
+                                     "com",
+                                     "mamba",
+                                     "KARLOS",
+                                     "DDoS",
+                                     "phoenix",
+                                     "PLUT",
+                                     "karma",
+                                     "bbc",
+                                     "CAPITAL"
+                                 ],
+                     "notes":  "info.(txt|hta)",
+                     "links":  [
+                                   "https://www.malwarebytes.com/blog/news/2019/07/a-deep-dive-into-phobos-ransomware",
+                                   "https://www.fortinet.com/blog/threat-research/deep-analysis-the-eking-variant-of-phobos-ransomware",
+                                   "https://blog.talosintelligence.com/understanding-the-phobos-affiliate-structure/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "LV",
+                     "activity":  "2021-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Northfield",
+                     "algorithm":  "AES+RSA",
+                     "pattern":  "\\w{7,9}",
+                     "notes":  [
+                                   "\\w{2,16}-README.txt",
+                                   ""
+                               ],
+                     "links":  [
+                                   "https://www.secureworks.com/research/lv-ransomware",
+                                   "https://www.trendmicro.com/en_us/research/22/j/lv-ransomware-exploits-proxyshell-in-attack.html"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "RansomEXX",
+                     "activity":  "2020-2022",
+                     "alias":  [
+                                   "Defray777",
+                                   "EXX"
+                               ],
+                     "targetos":  [
+                                      "Windows",
+                                      "Linux",
+                                      "ESXI"
+                                  ],
+                     "ta":  "Gold Dupont",
+                     "algorithm":  "AES-256 (ECB) + RSA-4096",
+                     "pattern":  "\\w{2,12}",
+                     "notes":  [
+                                   "\\w{2,12}_READ_ME!.txt",
+                                   "!NEWS_FOR_\\w{2,12}!"
+                               ],
+                     "links":  [
+                                   "https://id-ransomware.blogspot.com/2020/06/ransomexx-ransomware.html",
+                                   "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-ransomexx",
+                                   "https://securelist.com/ransomexx-trojan-attacks-linux-systems/99279/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Rorschach",
+                     "activity":  "2023-now",
+                     "alias":  "BabLock",
+                     "targetos":  "Linux,ESXI",
+                     "ta":  "",
+                     "algorithm":  [
+                                       "Sosemanuk+Curve25519",
+                                       "curve25519+hc-128"
+                                   ],
+                     "pattern":  "slpqne.\\d{1,2}",
+                     "notes":  "_r_e_a_d_m_e.txt",
+                     "links":  [
+                                   "https://www.trendmicro.com/en_us/research/23/d/an-analysis-of-the-bablock-ransomware.html",
+                                   "https://www.group-ib.com/blog/bablock-ransomware/",
+                                   "https://research.checkpoint.com/2023/rorschach-a-new-sophisticated-and-fast-ransomware/"
+                               ],
+                     "comment":  "Based on the babuk source code"
+                 },
+                 {
+                     "name":  "Royal",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "Gold Souvenir",
+                     "algorithm":  "AES256+RSA-2048",
+                     "pattern":  [
+                                     "royal_u",
+                                     "royal_w",
+                                     "royal"
+                                 ],
+                     "notes":  [
+                                   "How to Restore Your Files.html",
+                                   "README.TXT"
+                               ],
+                     "links":  [
+                                   "https://web.archive.org/web/20230727154000/https://blog.talosintelligence.com/talos-ir-q2-2023-quarterly-recap/",
+                                   "https://web.archive.org/web/20230510110052/https://unit42.paloaltonetworks.com/royal-ransomware/",
+                                   "http://web.archive.org/web/20230227130346/https://www.trendmicro.com/en_us/research/23/b/royal-ransomware-expands-attacks-by-targeting-linux-esxi-servers.html",
+                                   "https://www.cybereason.com/blog/royal-ransomware-analysis",
+                                   "https://resources.securityscorecard.com/research-ungated/the-royal-ransomware"
+                               ],
+                     "comment":  "Now rebanded in BlackSuit ransomware group"
+                 },
+                 {
+                     "name":  "Ryuk",
+                     "activity":  "2018 - 2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Ulrick/Grim Spider",
+                     "algorithm":  "AES256+RSA-2048",
+                     "pattern":  "RYK",
+                     "notes":  "RyukReadMe.txt",
+                     "links":  [
+                                   "Windows :",
+                                   "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2020-CTI-011.pdf",
+                                   "thedfirreport.com/2020/10/08/ryuks-return/",
+                                   "https://n1ght-w0lf.github.io/malware analysis/ryuk-ransomware/",
+                                   "https://fourcore.io/blogs/ryuk-ransomware-simulation-mitre-ttp"
+                               ],
+                     "comment":  "Ryuk adds a marker in the encrypted files using the keyword �HERMES�."
+                 },
+                 {
+                     "name":  "Turtle",
+                     "activity":  "2023",
+                     "alias":  [
+                                   "TURTLERANS",
+                                   "Turtle Ransomware",
+                                   "TurmiRansom"
+                               ],
+                     "targetos":  "MacOS",
+                     "ta":  "",
+                     "algorithm":  "RSA-2048",
+                     "pattern":  "TURTLERANSv0",
+                     "notes":  "",
+                     "links":  "https://objective-see.org/blog/blog_0x76.html",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "ViceSociety",
+                     "activity":  "2020-2022",
+                     "alias":  [
+                                   "Hellokitty",
+                                   "Kitty",
+                                   "KittyCrypt"
+                               ],
+                     "targetos":  "Windows,Linux",
+                     "ta":  "Gold Victor",
+                     "algorithm":  [
+                                       "AES-256 + RSA-2048",
+                                       "NTRU+AES-128",
+                                       "AES256 + secp256k1 + ECDSA"
+                                   ],
+                     "pattern":  [
+                                     "locked",
+                                     "kitty",
+                                     "crypted",
+                                     "v-society",
+                                     "boombye"
+                                 ],
+                     "notes":  [
+                                   "read_me_\\w{4,12}.txt",
+                                   ""
+                               ],
+                     "links":  [
+                                   "https://www.crowdstrike.com/blog/new-ransomware-variant-uses-golang-packer/",
+                                   "https://www.sentinelone.com/labs/hellokitty-ransomware-lacks-stealth-but-still-strikes-home/",
+                                   "https://medium.com/proferosec-osm/static-unpacker-and-decoder-for-hello-kitty-packer-91a3e8844cb7",
+                                   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-249a-0"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "PolyVice",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Victor",
+                     "algorithm":  "ChaCha20+Poly1305",
+                     "pattern":  [
+                                     "ViceSociety",
+                                     "v-society"
+                                 ],
+                     "notes":  [
+                                   "ALL YOUR FILES ARE ENCRYPTED!!!",
+                                   "AllYFilesAE"
+                               ],
+                     "links":  [
+                                   "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/",
+                                   "https://www.intrinsec.com/wp-content/uploads/2023/02/20230119_TLPCLEAR_Vice_Society_BLOG_Version_EN.pdf"
+                               ],
+                     "comment":  "Overloop code with Chily and SunnyDay ransomware"
+                 },
+                 {
+                     "name":  "WannaCry",
+                     "activity":  "2017",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "",
+                     "notes":  "",
+                     "links":  "https://logrhythm.com/blog/a-technical-analysis-of-wannacry-ransomware/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Jarjets",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "Salsa20",
+                     "pattern":  "Jarjets",
+                     "notes":  "Jarjets_ReadMe.txt",
+                     "links":  "https://twitter.com/threatintel/status/1717914332019753208",
+                     "comment":  "Rebrand of Cylance ransomware"
+                 },
+                 {
+                     "name":  "BlackShadow",
+                     "activity":  "2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "Salsa20",
+                     "pattern":  "BLackSh",
+                     "notes":  "BLackSh_Help.txt",
+                     "links":  "",
+                     "comment":  "Rebrand of Jarjets ransomware (Cylance \u003e Jarjets \u003e BlackShadow)"
+                 },
+                 {
+                     "name":  "Cheerscrypt",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  [
+                                      "Windows",
+                                      "ESXI"
+                                  ],
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "Sosemanuk+Curve25519",
+                     "pattern":  "Cheers",
+                     "notes":  "How to Restore Your Files.txt",
+                     "links":  [
+                                   "https://www.trendmicro.com/en_us/research/22/e/new-linux-based-ransomware-cheerscrypt-targets-exsi-devices.html",
+                                   "https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group"
+                               ],
+                     "comment":  "Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "AvosLocker",
+                     "activity":  "2021-now",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "Gold Espresso",
+                     "algorithm":  "Salsa20",
+                     "pattern":  [
+                                     "avoslinux",
+                                     "avos2"
+                                 ],
+                     "notes":  "README_FOR_RESTORE",
+                     "links":  [
+                                   "ESXI:",
+                                   "https://cyble.com/blog/avoslocker-ransomware-linux-version-targets-vmware-esxi-servers/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Hive",
+                     "activity":  "2021-2023",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "Gold Hawthorne",
+                     "algorithm":  "",
+                     "pattern":  "21k5p",
+                     "notes":  "_HOW_TO_DECRYPT.txt",
+                     "links":  [
+                                   "ESXI:",
+                                   "https://www.virustotal.com/gui/file/ecd2617338b3295f8fc98dd4a292e4f3a4d7de10b8204430745a5ba596e3a8d2/community"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Hunters International",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "Gold Hawthorne",
+                     "algorithm":  "ChaCha20-Poly1305+RSA OAEP",
+                     "pattern":  "locked",
+                     "notes":  "Contact Us.txt",
+                     "links":  "https://www.bitdefender.com/blog/businessinsights/hive-ransomwares-offspring-hunters-international-takes-the-stage/",
+                     "comment":  "Rebrand of Hive ransomware"
+                 },
+                 {
+                     "name":  "Rhysida",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Victor",
+                     "algorithm":  "ChaCha20",
+                     "pattern":  "rhysida",
+                     "notes":  "CriticalBreachDetected.pdf",
+                     "links":  [
+                                   "https://www.sentinelone.com/anthology/rhysida/",
+                                   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-319a",
+                                   "https://www.secplicity.org/2023/05/23/scratching-the-surface-of-rhysida-ransomware/",
+                                   "https://detect.fyi/rhysida-ransomware-and-the-detection-opportunities-3599e9a02bb2",
+                                   "https://www.fortinet.com/content/dam/fortinet/assets/threat-reports/rhysida-ransomware-intrusion.pdf"
+                               ],
+                     "comment":  "Rebrand of HelloKitty ransomware"
+                 },
+                 {
+                     "name":  "Luna",
+                     "activity":  "2022",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "",
+                     "algorithm":  "Curve25519 and AES-256 (CTR)",
+                     "pattern":  "Luna",
+                     "notes":  "readme-Luna.txt",
+                     "links":  "https://nikhilh-20.github.io/blog/luna_ransomware/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "REvil",
+                     "activity":  "2019-now",
+                     "alias":  "Sodinokibi",
+                     "targetos":  "Windows,Linux,ESXI",
+                     "ta":  "Gold Southfield",
+                     "algorithm":  "AES-256 CTR/Salsa20+RSA",
+                     "pattern":  "\\w{5,10}",
+                     "notes":  "\\w{5,10}-readme.txt",
+                     "links":  [
+                                   "https://resources.securityscorecard.com/research/detailed-analysis-revil",
+                                   "https://www.secureworks.com/blog/revil-development-adds-confidence-about-gold-southfield-reemergence?linkId=164334801",
+                                   "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-revil",
+                                   "https://www.tgsoft.it/immagini/news/20190705Sodinokibi/Sodinokibi_eng.pdf"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Diablo",
+                     "activity":  "now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES",
+                     "pattern":  "",
+                     "notes":  "",
+                     "links":  "https://twitter.com/DailyDarkWeb/status/1735351446629945688",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Akira",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows,Linux",
+                     "ta":  "Gold Sahara",
+                     "algorithm":  "Chacha20",
+                     "pattern":  "akira",
+                     "notes":  "akira_readme.txt",
+                     "links":  [
+                                   "https://www.sentinelone.com/blog/from-conti-to-akira-decoding-the-latest-linux-esxi-ransomware-families/",
+                                   "https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-akira",
+                                   "https://blog.bushidotoken.net/2023/09/tracking-adversaries-akira-another.html"
+                               ],
+                     "comment":  "Rebrand of Conti group"
+                 },
+                 {
+                     "name":  "Akira",
+                     "activity":  "2017",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "akira",
+                     "notes":  "",
+                     "links":  "https://www.enigmasoftware.com/akiraransomware-removal/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Zombi",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES",
+                     "pattern":  "zombi2",
+                     "notes":  "How_to_back_files.html",
+                     "links":  "",
+                     "comment":  "Forked stain from MedusaLocker"
+                 },
+                 {
+                     "name":  "BlackLegion",
+                     "activity":  "2021-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 ECB (RSA-4096)",
+                     "pattern":  "BlackLegion",
+                     "notes":  [
+                                   "DecryptNote.txt",
+                                   "DecryptNote-.{8}Me.txt"
+                               ],
+                     "links":  "https://www.bleepingcomputer.com/forums/t/791844/blacklegionblackdream-ransomware-random-8-charsemail-support-topic/",
+                     "comment":  "Rename of BlackDream ?"
+                 },
+                 {
+                     "name":  "BlackDream",
+                     "activity":  "2021-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 ECB (RSA-4096)",
+                     "pattern":  "BlackDream",
+                     "notes":  "ReadME-Decrypt.txt",
+                     "links":  "",
+                     "comment":  "BlackHeart \u003e BlackRouter \u003e BlackDream"
+                 },
+                 {
+                     "name":  "BlackRouter",
+                     "activity":  "2018-2019",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 ECB (RSA-4096)",
+                     "pattern":  "BlackRouter",
+                     "notes":  "ReadME-BlackRouter",
+                     "links":  [
+                                   "https://www.trendmicro.com/en_us/research/18/e/legitimate-application-anydesk-bundled-with-new-ransomware-variant.html",
+                                   "https://twitter.com/petrovic082/status/1081819901797548032"
+                               ],
+                     "comment":  "BlackHeart \u003e BlackRouter"
+                 },
+                 {
+                     "name":  "BlackHeart",
+                     "activity":  "2018-2019",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 ECB (RSA-4096)",
+                     "pattern":  [
+                                     "BlackRouter",
+                                     "pay2me"
+                                 ],
+                     "notes":  "ReadME-BLackHeart.txt",
+                     "links":  "https://id-ransomware.blogspot.com/2018/04/blackheart-ransomware.html",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "MarioLocker",
+                     "activity":  "2019-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "wanted",
+                     "notes":  [
+                                   "@ Readme.txt",
+                                   "WastedBitDecryptor"
+                               ],
+                     "links":  [
+                                   "https://otx.alienvault.com/pulse/6512f7262fbdfbc7d398b2c8",
+                                   "https://www.virustotal.com/gui/file/26ebdda500de80766d1d4d080d608d6e3ee48a78401c1084f0c2399f1605c7c2/relations"
+                               ],
+                     "comment":  "Possible affliation with RansomHouse group. The files are hosted in gofile.io (ransom + payloads)"
+                 },
+                 {
+                     "name":  "Kupidon",
+                     "activity":  "2019-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "kupidon",
+                     "notes":  "!KUPIDON_DECRYPT.txt",
+                     "links":  "",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Rapture",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Fiesta",
+                     "algorithm":  "AES+RSA",
+                     "pattern":  [
+                                     "7qzxid",
+                                     "qiSgqu"
+                                 ],
+                     "notes":  "(qiSgqu|7qzxid)-README.txt",
+                     "links":  [
+                                   "https://www.trendmicro.com/fr_fr/research/23/d/rapture-a-ransomware-family-with-similarities-to-paradise.html",
+                                   "https://cyware.com/news/new-rapture-ransomware-bears-notable-similarities-with-paradise-189231e7"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "$$$ Ransomware",
+                     "activity":  "2019-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "$$$",
+                     "notes":  "readme.txt",
+                     "links":  "https://www.virustotal.com/gui/file/d44df8fc28ccfa08c75e9965b3cc145d82111137e70b96946331e113ec6dd0b9/detection",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "0kilobypt",
+                     "activity":  "2016-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  [
+                                     "Aebaih6i",
+                                     "CRYP",
+                                     "val",
+                                     "crlth2eeluEivoh1naleph0uxo",
+                                     "mechu5Po",
+                                     "0kilobypt"
+                                 ],
+                     "notes":  [
+                                   "WHERE ARE YOUR FILES READ ME.txt",
+                                   "!!!(TECH_SUPPORT|ACCESS_\\sTO_FILES_WRITE|HELP_\\sWITH_FILES)(_\\s|\\s__\\s)\\(.{6,9}@.{6,12}\\)\\.txt"
+                               ],
+                     "links":  [
+                                   "https://id-ransomware.blogspot.com/2016/03/0kilobypt-ransomware.html",
+                                   "https://twitter.com/Amigo_A_/status/1106189374277017600"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "0mega",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "0mega",
+                     "notes":  [
+                                   "DECRYPT-FILES.txt",
+                                   "PREVENT-LEAKAGE.txt"
+                               ],
+                     "links":  "https://web.archive.org/web/20230611041546/https://www.obsidiansecurity.com/blog/saas-ransomware-observed-sharepoint-microsoft-365/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "0XXX",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "0XXX",
+                     "notes":  "!0XXX_DECRYPTION_README.TXT",
+                     "links":  "https://www.nakivo.com/blog/what-is-0xxx-ransomware-detection-protection-and-recovery/",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "16x",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "16x",
+                     "notes":  "",
+                     "links":  "https://www.pcrisk.com/removal-guides/19800-16x-ransomware",
+                     "comment":  [
+                                     "IOC:55b45f61809f8532b84ebdc2c8020514c4d0f91af6debcd9b82634070312a76b",
+                                     "adc220109f73acdd307036a6d14bffa68103a48e2305c3a4f1533aab74d9deb8",
+                                     "Note:Ransom note printed in the cmd that launch ed by the payload of the ransomware"
+                                 ]
+                 },
+                 {
+                     "name":  "24H Ransomware",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "24H",
+                     "notes":  "ReadME-24H.txt",
+                     "links":  "https://www.pcrisk.com/removal-guides/13092-24h-ransomware",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Mallox",
+                     "activity":  "2022-now",
+                     "alias":  [
+                                   "TargetCompany",
+                                   "FARGO",
+                                   "Tohnichi"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "ChaCha20/AES-128 + Curve25519",
+                     "pattern":  [
+                                     "FARGO",
+                                     "FARGO2",
+                                     "FARGO3",
+                                     "exploit",
+                                     "avast",
+                                     "bitenc",
+                                     "xollam",
+                                     "mallox"
+                                 ],
+                     "notes":  [
+                                   "RECOVERY FILES.txt",
+                                   "FILE RECOVERY.txt"
+                               ],
+                     "links":  [
+                                   "https://www.picussecurity.com/resource/blog/fargo-ransomware-analysis-and-simulation",
+                                   "https://unit42.paloaltonetworks.com/mallox-ransomware/",
+                                   "https://www.sangfor.com/blog/cybersecurity/new-threat-mallox-ransomware",
+                                   "https://labs.k7computing.com/index.php/mallox-ransomware/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Hornet",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "RSA2048",
+                     "pattern":  "",
+                     "notes":  "README_\\d{7,10}.txt",
+                     "links":  "https://rixed-labs.medium.com/a-brief-analysis-of-hornet-ransomware-ec958e9cf310",
+                     "comment":  "Take as ransom extenion the base64 of the name of file"
+                 },
+                 {
+                     "name":  "Agenda",
+                     "activity":  "2022-2023",
+                     "alias":  [
+                                   "Qilin",
+                                   "AgendaCrypt"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256+RSA-2048",
+                     "pattern":  "[a-zA-Z]{10}",
+                     "notes":  "\\w{3,12}-RECOVER-README.txt",
+                     "links":  [
+                                   "https://www.trendmicro.com/en_us/research/22/l/agenda-ransomware-uses-rust-to-target-more-vital-industries.html",
+                                   "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/h/new-golang-ransomware-agenda-customizes-attacks/IOCs-blog-New%20Golang%20Ransomware%20Agenda%20Customizes%20Attacks.txt",
+                                   "https://www.group-ib.com/blog/qilin-ransomware/"
+                               ],
+                     "comment":  "Extension based on ten random letters (up and downcase) used as id victim company"
+                 },
+                 {
+                     "name":  "ARCrypter",
+                     "activity":  "2022",
+                     "alias":  "Chile Locker",
+                     "targetos":  [
+                                      "Windows",
+                                      "Linux",
+                                      "ESXI"
+                                  ],
+                     "ta":  "",
+                     "algorithm":  "AES+RSA",
+                     "pattern":  "crypt",
+                     "notes":  "readme_for_unlock.txt",
+                     "links":  "https://blogs.blackberry.com/en/2022/11/arcrypter-ransomware-expands-its-operations-from-latin-america-to-the-world",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "BianLian",
+                     "activity":  "2022-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Masked Spider",
+                     "algorithm":  "AES-256 (CBC)",
+                     "pattern":  "bianlian",
+                     "notes":  "Look at this instruction.txt",
+                     "links":  [
+                                   "https://www.logpoint.com/wp-content/uploads/2023/06/logpoint-etpr-bianlian-ransomware.pdf",
+                                   "https://resources.securityscorecard.com/research/bian-lian-deep-dive"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Bisamware",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES + RSA",
+                     "pattern":  "BISAMWARE",
+                     "notes":  "SYSTEM=RANSOMWARE=INFECTED.TXT",
+                     "links":  [
+                                   "https://twitter.com/h2jazi/status/1570246175747457026",
+                                   "https://www.cynet.com/wp-content/uploads/2022/11/Monthly_Ransomware_Activity_Report_September_2022.pdf"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "BlackMatter",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  [
+                                      "Windows",
+                                      "Linux",
+                                      "EXSI"
+                                  ],
+                     "ta":  "Gold Waterfall",
+                     "algorithm":  [
+                                       "Salsa20 + RSA-1024",
+                                       "HC-256 + RSA-4096"
+                                   ],
+                     "pattern":  "\\w{8,10}",
+                     "notes":  "\\w{8,10}.README.txt",
+                     "links":  [
+                                   "https://www.group-ib.com/blog/blackmatter-ransomware/",
+                                   "https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/docs/vmw-exposing-malware-in-linux-based-multi-cloud-environments.pdf",
+                                   "https://blogs.blackberry.com/en/2021/09/threat-thursday-blackmatter-ransomware-as-a-service"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "BlackSuit",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  [
+                                      "Windows",
+                                      "Linux",
+                                      "ESXI"
+                                  ],
+                     "ta":  "Gold Souvenir",
+                     "algorithm":  "AES256+RSA-2048",
+                     "pattern":  "blacksuit",
+                     "notes":  "README.BlackSuit.txt",
+                     "links":  [
+                                   "https://www.trendmicro.com/fr_fr/research/23/e/investigating-blacksuit-ransomwares-similarities-to-royal.html",
+                                   "https://cyble.com/blog/blacksuit-ransomware-strikes-windows-and-linux-users/"
+                               ],
+                     "comment":  "royal \u003e blacksuit"
+                 },
+                 {
+                     "name":  "Checkmate",
+                     "activity":  "2022-now ?",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "checkmate",
+                     "notes":  "!CHECKMATE_DECRYPTION_README.txt",
+                     "links":  [
+                                   "https://www.pcrisk.fr/guides-de-suppression/11551-checkmate-ransomware",
+                                   "https://www.bitdefender.com/blog/hotforsecurity/qnap-nas-users-targeted-with-ransomware-again-this-time-its-checkmate/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Cring",
+                     "activity":  "2020-2021",
+                     "alias":  [
+                                   "RSA",
+                                   "Vjiszy1lo",
+                                   "Ghost",
+                                   "Phantom",
+                                   "VnBeHa99y",
+                                   "Pay4it"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "Gold fIesta",
+                     "algorithm":  "AES-256 +  RSA-8192",
+                     "pattern":  [
+                                     "RSA",
+                                     "cring",
+                                     "vjiszy1lo",
+                                     "jpghosts",
+                                     "phantom",
+                                     "VnBeHa99y",
+                                     "pay4it",
+                                     "lldc",
+                                     "locked",
+                                     "sg-ghosts",
+                                     "just4money"
+                                 ],
+                     "notes":  [
+                                   "!!!!deReadMe!!!.txt",
+                                   "HOW_CAN_GET_FILES_BACK.(txt|rtf)",
+                                   "LOOK_THIS_BACK_FILE.(txt|rtf)",
+                                   "HOW_CAN_RECOVERY.txt"
+                               ],
+                     "links":  "https://id-ransomware.blogspot.com/2021/01/cring-ransomware.html",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Cuba",
+                     "activity":  "2019-now",
+                     "alias":  "Fidel",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Flamingo",
+                     "algorithm":  "ChaCha20+RSA",
+                     "pattern":  "cuba",
+                     "notes":  "!! READ ME !!.txt",
+                     "links":  [
+                                   "https://securelist.com/cuba-ransomware/110533/",
+                                   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-335a"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "DarkBit",
+                     "activity":  "2023-now",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Aztec",
+                     "algorithm":  "AES-256+RSA",
+                     "pattern":  "Darkbit",
+                     "notes":  "RECOVERY_DARKBIT.txt",
+                     "links":  [
+                                   "https://blogs.blackberry.com/en/2023/02/darkbit-ransomware-targets-israel",
+                                   "https://cyble.com/blog/uncovering-the-dark-side-of-darkbit-ransomware/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "DearCry",
+                     "activity":  "2021",
+                     "alias":  "DoejoCrypt",
+                     "targetos":  "Windiws",
+                     "ta":  "",
+                     "algorithm":  "AES-256+RSA-2048",
+                     "pattern":  "CRYPT",
+                     "notes":  "readme.txt",
+                     "links":  [
+                                   "https://niiconsulting.com/checkmate/2021/04/technical-analysis-of-dearcry-ransomware/",
+                                   "https://lifars.com/wp-content/uploads/2021/04/DearCry_Ransomware.pdf",
+                                   "https://www.cisa.gov/news-events/analysis-reports/ar21-102b"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Defray",
+                     "activity":  "2018-2020",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Dupont",
+                     "algorithm":  "AES-256 (ECB) + RSA-4096",
+                     "pattern":  [
+                                     "\\w{2,6}777",
+                                     "c3nt3r",
+                                     ".waynedd1911",
+                                     "c0mp4ny_n4m3"
+                                 ],
+                     "notes":  [
+                                   "!!!_Read_Me_How_To_DeCrypt_Files_!!!.tXt",
+                                   "#-CENTER-Read-It-Urgent-#.txt",
+                                   "!_WAYNEDD-README.txt",
+                                   "!~COMPANY_NAME~!.txt",
+                                   "\\w{2,12}_READ_ME!.txt",
+                                   "777-\\w{2,12}",
+                                   "-\\w{2,12}911-\\w{2,12}",
+                                   ""
+                               ],
+                     "links":  "https://id-ransomware.blogspot.com/2017/08/defray-ransomware.html",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Egregor",
+                     "activity":  "2020-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Gold Village",
+                                "Gold Phantom"
+                            ],
+                     "algorithm":  "ChaCha8 + RSA-2048",
+                     "pattern":  "[a-zA-Z]{4,6}",
+                     "notes":  "RECOVER-FILES.txt",
+                     "links":  [
+                                   "https://www.forescout.com/resources/egregor-ransomware/",
+                                   "https://www.group-ib.com/blog/egregor/",
+                                   "https://lifars.com/wp-content/uploads/2021/01/MALWARE-ANALYSIS-UNPACKING-OF-EGREGOR-RANSOMWARE.pdf",
+                                   "https://cyble.com/blog/egregor-ransomware-a-deep-dive-into-its-activities-and-techniques/"
+                               ],
+                     "comment":  "Maze  \u003e  Sekhmet \u003e  Egregor"
+                 },
+                 {
+                     "name":  "H0lyGh0st",
+                     "activity":  "2021",
+                     "alias":  [
+                                   "HolyLocker",
+                                   "SiennaPurple",
+                                   "SiennaBlue"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "Plutonium",
+                     "algorithm":  "AES 128(CBC)+RSA-1024",
+                     "pattern":  "h0lyenc",
+                     "notes":  "FOR_DECRYPT.html",
+                     "links":  [
+                                   "https://www.picussecurity.com/resource/h0lygh0st-north-korean-threat-group-strikes-back-with-new-ransomware",
+                                   "https://blogs.blackberry.com/en/2022/08/h0lygh0st-ransomware"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "HadesLocker",
+                     "activity":  "2016",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  "~HL[a-zA-Z]{5}",
+                     "notes":  "README_RECOVER_FILES_\\w{16}.(txt|png|html)",
+                     "links":  [
+                                   "https://www.bleepingcomputer.com/news/security/wildfire-rises-from-the-grave-as-the-rebranded-hades-locker/",
+                                   "https://www.proofpoint.com/us/threat-insight/post/hades-locker-ransomware-mimics-locky"
+                               ],
+                     "comment":  "Hades Locker is based on the WildFire Locker."
+                 },
+                 {
+                     "name":  "Hello",
+                     "activity":  "2021-2022",
+                     "alias":  "WickrMe",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Fiesta",
+                     "algorithm":  "AES-128+RSA-2048",
+                     "pattern":  [
+                                     "hello",
+                                     "bonjour"
+                                 ],
+                     "notes":  "Readme!!!.txt",
+                     "links":  [
+                                   "https://www.brucert.org.bn/advisory-hello-wickrme-ransomware",
+                                   "https://www.trendmicro.com/fr_fr/research/21/d/hello-ransomware-uses-updated-china-chopper-web-shell-sharepoint-vulnerability.html"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "LockFile",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "AES128 (CBC) + RSA-2048",
+                     "pattern":  "lockfile",
+                     "notes":  "LOCKFILE-README-FILE-(\\w{1,16}|\\w{1,16}-\\w{1,8})-\\d{10}.hta",
+                     "links":  "https://news.sophos.com/en-us/2021/08/27/lockfile-ransomwares-box-of-tricks-intermittent-encryption-and-evasion/",
+                     "comment":  "Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "Locky",
+                     "activity":  "2016",
+                     "alias":  "",
+                     "targetos":  "",
+                     "ta":  "",
+                     "algorithm":  "AES-128 + RSA2048",
+                     "pattern":  [
+                                     "locky",
+                                     "osiris",
+                                     "diablo6",
+                                     "ykcol",
+                                     "aesir",
+                                     "asasin",
+                                     "loptr",
+                                     "shit",
+                                     "ykcol",
+                                     "zzzzz",
+                                     "thor",
+                                     "lukitus"
+                                 ],
+                     "notes":  [
+                                   "OSIRIS-\\w{4}.htm",
+                                   "diablo6-\\w{4}.htm",
+                                   ""
+                               ],
+                     "links":  [
+                                   "https://www.malwarebytes.com/blog/news/2016/03/look-into-locky",
+                                   "https://www.bleepingcomputer.com/news/security/locky-ransomware-switches-to-egyptian-mythology-with-the-osiris-extension/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Loki",
+                     "activity":  "2021-2023",
+                     "alias":  "blackbit",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 (GCM) + RSA-2048",
+                     "pattern":  [
+                                     "BlackBit",
+                                     "Loki",
+                                     "Rainman",
+                                     "PayForKey",
+                                     "Adair",
+                                     "Boresh",
+                                     "onion700",
+                                     "DATA"
+                                 ],
+                     "notes":  [
+                                   "Restore-My-Files.txt",
+                                   "info.hta",
+                                   "#FILES-ENCRYPTED.txt"
+                               ],
+                     "links":  [
+                                   "https://id-ransomware.blogspot.com/2021/10/lokilocker-ransomware.html",
+                                   "https://cyble.com/blog/blackbit-ransomware-a-threat-from-the-shadows-of-lokilocker/",
+                                   "https://asec.ahnlab.com/en/51497/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Makop",
+                     "activity":  "2020-now",
+                     "alias":  "Fair",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  [
+                                     "fair",
+                                     "makop",
+                                     "mkp"
+                                 ],
+                     "notes":  [
+                                   "readme-warning.txt",
+                                   "+README-WARNING+.txt",
+                                   "makop-readme.txt"
+                               ],
+                     "links":  [
+                                   "https://medium.com/@lcam/makop-the-toolkit-of-a-criminal-gang-53cd44563c11",
+                                   "https://www.cyfirma.com/outofband/technical-analysis-makop-ransomware/",
+                                   "https://lifars.com/wp-content/uploads/2021/08/Makop-Ransomware-Whitepaper-case-studyNEW-1.pdf"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "MarsJoke",
+                     "activity":  "2016",
+                     "alias":  "Polygot",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "Curve25519+AES-256 (ECB)",
+                     "pattern":  [
+                                     "a19",
+                                     "ap19"
+                                 ],
+                     "notes":  [
+                                   "ReadMeFilesDecrypt!!!.txt",
+                                   "�!!! Readme For Decrypt !!!.txt"
+                               ],
+                     "links":  [
+                                   "https://securelist.com/polyglot-the-fake-ctb-locker/76182/",
+                                   "https://www.proofpoint.com/us/threat-insight/post/MarsJoke-Ransomware-Mimics-CTB-Locker"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Maui",
+                     "activity":  "2021-2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Plutonium",
+                     "algorithm":  "AES 128(CBC)+RSA-1024",
+                     "pattern":  "",
+                     "notes":  "",
+                     "links":  [
+                                   "https://redpiranha.net.au/news/threat-intelligence-report-july-19-july-25-2022",
+                                   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-187a",
+                                   "https://www.picussecurity.com/resource/maui-ransomware-north-korean-threat-actors-attack-healthcare-sector"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Mespinoza",
+                     "activity":  "2020-2022",
+                     "alias":  "Pysa",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Burlap",
+                     "algorithm":  "AES CBC+RSA",
+                     "pattern":  "pysa",
+                     "notes":  "Readme.README",
+                     "links":  [
+                                   "https://dissectingmalwa.re/another-one-for-the-collection-mespinoza-pysa-ransomware.html",
+                                   "https://25491742.fs1.hubspotusercontent-eu1.net/hubfs/25491742/%5BPYSA%5D%20Ransomware%20Group%20In-Depth%20Analysis.pdf"
+                               ],
+                     "comment":  "Vurten \u003e Mespinoza \u003e Pysa"
+                 },
+                 {
+                     "name":  "N3TW0RM",
+                     "activity":  "2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "",
+                     "pattern":  "n3tw0rm",
+                     "notes":  "N3TWORM_MESSAGE.TXT",
+                     "links":  "https://twitter.com/TrendMicroRSRCH/status/1389422784808378370",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Nefilim",
+                     "activity":  "2020-2021",
+                     "alias":  "Nephilim",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Mansard",
+                     "algorithm":  "AES-128 + RSA-2048",
+                     "pattern":  [
+                                     "Nefilim",
+                                     "NEPHILIM"
+                                 ],
+                     "notes":  "NEPHILIM-DECRYPT.txt",
+                     "links":  "https://blog.qualys.com/vulnerabilities-threat-research/2021/05/12/nefilim-ransomware",
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Nemty",
+                     "activity":  "2019-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Mansard",
+                     "algorithm":  "AES-128 (CBC) + RSA-2048",
+                     "pattern":  "nemty",
+                     "notes":  "NEMTY-DECRYPT.txt",
+                     "links":  [
+                                   "https://www.sentinelone.com/labs/meet-nemty-successor-nefilim-nephilim-ransomware/",
+                                   "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/nemty-ransomware-learning-by-doing/",
+                                   "https://www.fortinet.com/blog/threat-research/nemty-ransomware-early-stage-threat"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "NightSky",
+                     "activity":  "2022-2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "AES128 (CBC) + RSA-2048",
+                     "pattern":  "nightsky",
+                     "notes":  "NightSkyReadMe.hta",
+                     "links":  [
+                                   "https://www.forescout.com/resources/night-sky-ransomeware-threat-brief/",
+                                   "https://github.com/Dump-GUY/Malware-analysis-and-Reverse-engineering/blob/main/NightSky_Ransomware%E2%80%93just_a_Rook_RW_fork_in_VMProtect_suit/NightSky_Ransomware%E2%80%93just_a_Rook_RW_fork_in_VMProtect_suit.md"
+                               ],
+                     "comment":  "Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "Pandora",
+                     "activity":  "2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "AES128 (CBC) + RSA-2048",
+                     "pattern":  "Pandora",
+                     "notes":  "Restore_My_Files.txt",
+                     "links":  [
+                                   "https://cyble.com/blog/deep-dive-analysis-pandora-ransomware/",
+                                   "https://explore.avertium.com/resource/in-depth-pandora-ransomware",
+                                   "https://www.cloudsek.com/blog/technical-analysis-of-emerging-sophisticated-pandora-ransomware-group",
+                                   "https://www.fortinet.com/blog/threat-research/looking-inside-pandoras-box"
+                               ],
+                     "comment":  "Pandora is a re-brand of ROOK Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "Paradise",
+                     "activity":  "2018-now",
+                     "alias":  [
+                                   "Paradise .NET",
+                                   "ParadiseB29"
+                               ],
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES+RSA-1024",
+                     "pattern":  "paradise",
+                     "notes":  "#DECRYPT MY FILES#.txt",
+                     "links":  [
+                                   "https://www.acronis.com/en-us/blog/posts/paradise-ransomware-strikes-again/",
+                                   "https://mssplab.github.io/threat-hunting/2023/06/23/src-paradise.html"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Pay2Key",
+                     "activity":  "2020-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Pioneer Kitten",
+                     "algorithm":  "AES + RSA",
+                     "pattern":  [
+                                     "enc",
+                                     "pay2key"
+                                 ],
+                     "notes":  [
+                                   "SALAM_MESSAGE.TXT",
+                                   "\\w{2,16}_MESSAGE.TXT"
+                               ],
+                     "links":  [
+                                   "https://research.checkpoint.com/2020/ransomware-alert-pay2key/",
+                                   "https://www.bleepingcomputer.com/news/security/intels-habana-labs-hacked-by-pay2key-ransomware-data-stolen/",
+                                   "https://www.clearskysec.com/wp-content/uploads/2020/12/Pay2Kitten.pdf"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "RagnarLocker",
+                     "activity":  "2020-2023",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Viking Spider",
+                     "algorithm":  "Salsa20+ RSA-2048",
+                     "pattern":  [
+                                     "ragnar_\\w{8}",
+                                     "RAGN@R_ [A-Z0-9]{8}"
+                                 ],
+                     "notes":  [
+                                   "RGNR_\\w{8}.txt",
+                                   "!$R4GN4R__ [A-Z0-9]{8}$!.txt"
+                               ],
+                     "links":  [
+                                   "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/Additional%20Analysis/RagnarLocker/2020-08-08/Analysis.md",
+                                   "https://blogs.blackberry.com/en/2021/07/threat-thursday-ragnar-locker-ransomware",
+                                   "https://cyble.com/blog/deep-dive-into-ragnar-locker-ransomware-gang/",
+                                   "https://www.bleepingcomputer.com/news/security/ragnar-locker-ransomware-developer-arrested-in-france/"
+                               ],
+                     "comment":  "Dev of ransomware was arrested in Paris, France, on 16 October, and his home in Czechia was searched. Ukrainian police raided the premises of another suspected gang members in Kyiv, seizing laptops, mobile phones, and electronic devices"
+                 },
+                 {
+                     "name":  "Rook",
+                     "activity":  "2021-2022",
+                     "alias":  "Tower",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "AES128 (ECB) + RSA-2048",
+                     "pattern":  [
+                                     "Tower",
+                                     "Rook"
+                                 ],
+                     "notes":  "HowToRestoreYourFiles.txt",
+                     "links":  [
+                                   "https://kcm.trellix.com/corporate/index?page=content\u0026id=KB95751\u0026locale=en_US",
+                                   "https://www.sentinelone.com/labs/new-rook-ransomware-feeds-off-the-code-of-babuk/",
+                                   "https://chuongdong.com/reverse%20engineering/2022/01/06/RookRansomware/#rsa-key-generation"
+                               ],
+                     "comment":  "Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "Atomsilo",
+                     "activity":  "2021-2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  [
+                                "Emperor Dragonfly",
+                                "DEV-401"
+                            ],
+                     "algorithm":  "AES128 (CBC) + RSA-2048",
+                     "pattern":  "ATOMSILO",
+                     "notes":  "README-FILE-(\\w{1,16}|\\w{1,16}-\\w{1,8})-\\d{10}.hta",
+                     "links":  [
+                                   "https://www.cyfirma.com/outofband/malware-research-on-atomsilo-ransomware/",
+                                   "https://chuongdong.com/reverse engineering/2021/10/13/AtomSiloRansomware/"
+                               ],
+                     "comment":  "Based on the Babuk source-code leaks we have seen over 2021. Lockfile \u003e AtomSilo \u003e Rook \u003e Pandora \u003e NightSky \u003e Cheerscrypt"
+                 },
+                 {
+                     "name":  "SamSam",
+                     "activity":  "2015-2020",
+                     "alias":  "Samas",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Lowell",
+                     "algorithm":  "AES-256 (CBC) + RSA-2048",
+                     "pattern":  [
+                                     "encryptedRSA",
+                                     "justbtcwillhelpyou",
+                                     "btc-help-you"
+                                 ],
+                     "notes":  [
+                                   "HELP_DECRYPT_YOUR_FILES.txt",
+                                   "HELP_DECRYPT_YOUR_FILE.txt"
+                               ],
+                     "links":  [
+                                   "https://blog.talosintelligence.com/samsam-ransomware/",
+                                   "https://www.secureworks.com/blog/samas-ransomware",
+                                   "https://www.crowdstrike.com/blog/an-in-depth-analysis-of-samsam-ransomware-and-boss-spider/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Sekhmet",
+                     "activity":  "2020-2021",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Village",
+                     "algorithm":  "ChaCha20+RSA-2048",
+                     "pattern":  "\\w{4-7}",
+                     "notes":  "RECOVER-FILES.txt",
+                     "links":  "https://www.acronis.com/en-us/blog/posts/sekhmet-ransomware/",
+                     "comment":  "Maze  \u003e  Sekhmet \u003e  Egregor"
+                 },
+                 {
+                     "name":  "Lorenz",
+                     "activity":  "2021-now",
+                     "alias":  "ThunderCrypt",
+                     "targetos":  "Windows",
+                     "ta":  "Gold Lounge",
+                     "algorithm":  "AES-128 (CBC) + RSA",
+                     "pattern":  "sz40",
+                     "notes":  [
+                                   "HELP_SECURITY_EVENT.html",
+                                   "HELP.TXT"
+                               ],
+                     "links":  [
+                                   "https://www.tesorion.nl/en/posts/lorenz-ransomware-analysis-and-a-free-decryptor/",
+                                   "https://www.tesorion.nl/en/posts/lorenz-ransomware-rebound-corruption-and-irrecoverable-files/",
+                                   "https://arcticwolf.com/resources/blog/lorenz-ransomware-getting-dumped/",
+                                   "https://www.securityweek.com/cisa-warns-of-two-mitel-vulnerabilities-exploited-in-wild/"
+                               ],
+                     "comment":  ""
+                 },
+                 {
+                     "name":  "Ballacks",
+                     "activity":  "2022",
+                     "alias":  "",
+                     "targetos":  "Windows",
+                     "ta":  "",
+                     "algorithm":  "AES-256 + RSA-2048",
+                     "pattern":  "ballacks",
+                     "notes":  "ReadthisforDecode.txt",
+                     "links":  "https://www.cynet.com/wp-content/uploads/2022/11/Monthly_Ransomware_Activity_Report_September_2022.pdf",
+                     "comment":  ""
+                 }
+             ]
+}
